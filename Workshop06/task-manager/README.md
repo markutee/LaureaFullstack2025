@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Tämä on kuudes työpaja
+readme tiedosto tuli reactin lataamisen yhteydessä.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
