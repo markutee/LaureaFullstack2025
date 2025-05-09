@@ -24,7 +24,7 @@ function App() {
     const updatedTasks = tasks.map((task, i) =>
       i === index ? { ...task, completed: !task.completed } : task
     );
-    setTasks(updatedTasks);
+    setTasks(updatedTasks);  // Päivittää tehtävän uudeksi halutessaan
   };
 
   return (
