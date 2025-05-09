@@ -1,0 +1,117 @@
+/* Perustyyli */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #4db5d2;
+}
+
+/* Sovelluksen säiliö */
+.App {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Input-kenttä ja painikkeet */
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 75%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Tehtävälista */
+.task-list-container {
+  max-height: 400px; /* Maksimikorkeus */
+  overflow-y: auto; /* Lisää vierityspalkki, jos lista ylittää korkeuden */
+  margin-top: 20px;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.task-item.completed {
+  background-color: #e0ffe0;
+  
+}
+
+.task-item input[type="text"] {
+  width: 80%;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.toggle-btn, .delete-btn {
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.toggle-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.toggle-btn:hover {
+  background-color: #45a049;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #e53935;
+}
