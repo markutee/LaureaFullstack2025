@@ -5,6 +5,7 @@ function App() {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
 
+// Lisää uusi tehtävä listalle
   const addTask = () => {
     if (newTask) {
       setTasks([...tasks, { text: newTask, completed: false }]);
@@ -12,11 +13,13 @@ function App() {
     }
   };
 
+// Poistaa tehtävän listalta
   const deleteTask = (index) => {
     const updatedTasks = tasks.filter((_, i) => i !== index);
     setTasks(updatedTasks);
   };
 
+// Merkitsee tehtävän valmiiksi 
   const toggleCompletion = (index) => {
     const updatedTasks = tasks.map((task, i) =>
       i === index ? { ...task, completed: !task.completed } : task
